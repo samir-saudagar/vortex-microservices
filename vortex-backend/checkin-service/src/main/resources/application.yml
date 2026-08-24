@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: checkin-service
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/checkin_db
+    username: ${POSTGRES_USER:vortex_admin_samir}
+    password: ${POSTGRES_PASSWORD:vortex_admin_samir_samirsaudagar}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  data:
+    web:
+      pageable:
+        default-page-size: 20
+        max-page-size: 100
+  kafka:
+    bootstrap-servers: localhost:9092

@@ -1,0 +1,15 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: routing-service
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:5432/routing_db
+    username: ${POSTGRES_USER:vortex_admin_samir}
+    password: ${POSTGRES_PASSWORD:vortex_admin_samir_samirsaudagar}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

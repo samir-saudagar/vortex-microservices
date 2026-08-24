@@ -1,0 +1,27 @@
+{
+  "type": "record",
+  "name": "FlightStatusVerified",
+  "namespace": "com.samir.vortex.bhs.flight.avro",
+  "fields": [
+    {
+      "name": "bagTag",
+      "type": "string"
+    },
+    {
+      "name": "flightNumber",
+      "type": "string"
+    },
+    {
+      "name": "flightStatus",
+      "type": "string",
+      "doc": "Status like ACTIVE, CANCELLED, DELAYED, or UNKNOWN"
+    },
+    {
+      "name": "verifiedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}
