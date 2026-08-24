@@ -6,8 +6,8 @@ spring:
     name: equipment-service
   datasource:
     url: jdbc:postgresql://${DB_HOST:localhost}:5432/equipment_db
-    username: ${POSTGRES_USER:vortex_admin_samir}
-    password: ${POSTGRES_PASSWORD:vortex_admin_samir_samirsaudagar}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
